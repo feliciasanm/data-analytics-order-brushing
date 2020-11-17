@@ -47,9 +47,8 @@ The objective of the challenge was to produce a csv file that labeled which shop
 
 Column name | Description
 ----------- | -----------
-`shopid`      | unique identifier of the shop
-`userid`      | list of suspicious buyers (id) associated with the shop, separated with `&` and no space, 0 if there is none
-
+`shopid`    | unique identifier of the shop
+`userid`    | list of suspicious buyers (id) associated with the shop, separated with `&` and no space, 0 if there is none
 
 To clarify the structure further, below I will provide an example of the resulting csv file structure. 
 
