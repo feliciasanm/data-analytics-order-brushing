@@ -64,7 +64,7 @@ shopid  | userid
 
 The solution featured here is written in R. In my team, the R version was written by me, separate from other versions written by other team members. When I wrote the R code, the use of library was limited to `lubridate` and `dplyr` only, the rest written in base R (check my other repositories to see R code written using tidyverse). The entire solution code is encapsulated in a function named `brushdetector`, which needs to be invoked to run the solution.
 
-The competition was conducted until 4.30 pm, which was roughly when the working code was finished without including the time needed to actually execute the code. The csv result was submitted to Kaggle using late submission, resulting in a score of 0.89933 out of 1. I took additional 1 hour and 42 minutes to clean up the code, which I publish here unmodified (other than possible additional comments) in code on this repository. 
+The competition was conducted until 4.30 pm, which was roughly when the working code was finished without including the time needed to actually execute the code. The csv result was submitted to Kaggle using late submission, resulting in a score of 0.89933 out of 1. I took additional 1 hour and 42 minutes to clean up the code, which I publish here unmodified (other than additional comments) in code on this repository. 
 
 
 ## What I Learned From the Experience
@@ -80,6 +80,3 @@ The code featured here is a good picture of what I can write on June 2020 in 3-5
     The main trick was to write the code in the `for` loop but comment out the `for` statement itself. It will take too long to iterate on the code if we tried it using the entire data. Write then comment out the `for` loop statement (to make it easy to enable the loop again later), then assign `i` (what we usually use to keep track of the loop) with the first index of the loop. We can iterate the code quickly in this manner. When we are confident with the code, we can uncomment the `for` loop statement again and remove or comment the `i` variable assignment.  
 
 If I can write it again, I would have taken the time to check more convenient functions that I later discovered exist, and I would improve the performance of the code. Specifically, on the next data analytics challenge that I participated in (see in [this](https://github.com/feliciasanm/data-analytics-logistics-performance) repository), I reached out to use `data.table` on the final version to significantly reduce the time needed to run the code. It was an interesting challenge to do, and I would be very interested to participate in similar events in the future!
-
-## To Do
-* Adding comments to the code
